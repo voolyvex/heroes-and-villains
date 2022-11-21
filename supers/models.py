@@ -7,5 +7,5 @@ class Super(models.Model):
     alter_ego = models.CharField(max_length=255)
     primary_ability = models.CharField(max_length=255)
     secondary_ability = models.CharField(max_length=255)
-    catchphrase = models.CharField(max_length=255, default=None)
-    super_type = models.ForeignKey(SuperType, on_delete=models.CASCADE, default=None)
+    catchphrase = models.CharField(max_length=255, default='')
+    super_type = models.ForeignKey(SuperType, on_delete=models.CASCADE)
